@@ -1,0 +1,205 @@
+<!-- TOP OF WEBSITE -->
+
+<!-- NAVIGATION BAR -->
+<nav>
+  <!-- MOBILE MENU VIEW -->
+  <div class="mobile-title">
+    <div>
+      <h1>Titans Test Team</h1>
+    </div>
+    <div>
+      <img (click)="showMenu = !showMenu" class="mobile-dropdown-icon" src="../assets/images/menu-icon.png" alt="" />
+    </div>
+    <div class="nav-links-mobile" *ngIf="showMenu">
+      <a href="">Our Products</a>
+      <a href="">Reviews</a>
+      <a href="">Buying Guide</a>
+      <a href="">Help</a>
+      <a (click)="showMobileSearch = !showMobileSearch"><i class="fa fa-search"></i></a>
+    </div>
+    <!-- MOBILE SEARCH BAR -->
+
+    <div class="mobile-search-container" *ngIf="showMobileSearch">
+      <div>
+      <input class="mobile-search-bar" type="text" placeholder="Search" />
+    </div>
+      <div>
+        <i (click)="showMobileSearch = !showMobileSearch" class="fa fa-window-close mobile-close-icon"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- FULL MENU VIEW -->
+  <div class="navbar-container-1">
+    <div class="logo">
+      <img src="../assets/images/titans_logo_white_trans.png" alt="ttt-logo-1" />
+      <p class="nav-title">Titans Test Team</p>
+    </div>
+    <div class="nav-links">
+      <a href="">Our Products</a>
+      <a href="">Reviews</a>
+      <a href="">Buying Guide</a>
+      <a href="">Help</a>
+      <a (click)="showSearch = !showSearch"><i class="fa fa-search full-view-search-icon"></i></a>
+    </div>
+  </div>
+
+  <!-- SEARCH BAR  -->
+  <div *ngIf="showSearch" class="navbar-container-2">
+      <div>
+      <input class="full-view-searchbar" type="text" placeholder="Search" />
+      </div>
+      <div>
+        <i (click)="showSearch = !showSearch" class="fa fa-window-close full-view-close-icon"></i>
+      </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="hero">
+  <div class="container spacing">
+    <h1 class="primary-title">Amazing mobile suits at amazing prices</h1>
+    <h3 class="secondary-title">
+      In partnership with Earth Federation Forces, Anaheim Electronics &
+      Konpeitoh
+    </h3>
+    <div class="company-logos">
+      <img src="../assets/images/titans_logo_main.png" alt="Titans Logo" />
+      <img src="../assets/images/EFF.png" alt="Earth Federation Forces Logo" />
+      <img src="../assets/images/EF_flag.png" alt="Earth Federation Logo" />
+      <img src="../assets/images/AE_0083_white.png" alt="Anaheim Electronics Logo" />
+    </div>
+    <a href="https://gundam.fandom.com/wiki/Advance_of_Zeta:_The_Flag_of_Titans" class="a-button">SHOP NOW</a>
+  </div>
+  <div class="mobile-hidden-logo">
+    <div class="mob-div">
+      <img src="../assets/images/titans_logo_white_trans.png" alt="titans-logo" />
+    </div>
+  </div>
+
+  <div class="company-logos-mobile">
+    <img src="../assets/images/titans_logo_main.png" alt="Titans Logo" />
+    <img src="../assets/images/EFF.png" alt="Earth Federation Forces Logo" />
+    <img src="../assets/images/EF_flag.png" alt="Earth Federation Logo" />
+    <img src="../assets/images/AE_0083_white.png" alt="Anaheim Electronics Logo" />
+  </div>
+  <div class="shop-here-mobile-btn">
+    <a href="https://gundam.fandom.com/wiki/Advance_of_Zeta:_The_Flag_of_Titans" class="btn">SHOP NOW</a>
+  </div>
+</header>
+<!-- MAIN BODY OF WEBSITE -->
+<main>
+  <!-- SECTION 1 -->
+  <section class="featured">
+    <div class="container">
+      <h2 class="section-title">Featured Mobile Suits</h2>
+      <div class="split">
+        <a href="https://gundam.fandom.com/wiki/RX-121_Gundam_TR-1_%EF%BC%BBHazel%EF%BC%BD" class="featured__item">
+          <img src="../assets/images/Rx-121-fa.jpg" alt="RX-121 Gundam TR-1 Hazel Full Armor" />
+          <p class="featured__details">
+            <span class="price">$2,000,000</span>RX-121 Gundam TR-1"Hazel" Full
+            Armor
+          </p>
+        </a>
+
+        <a href="https://gundam.fandom.com/wiki/RX-121-1_Gundam_TR-1_%EF%BC%BBHazel_Custom%EF%BC%BD"
+          class="featured__item">
+          <img src="./assets/images/Hazel_custom.jpg" alt="RX-121-1 Gundam TR-1 Hazel Custom" />
+          <p class="featured__details">
+            <span class="price">$2,000,000</span>RX-121-1 TR-1 "Hazel Custom"
+          </p>
+        </a>
+
+        <a href="https://gundam.fandom.com/wiki/ORX-005_Gaplant_TR-5" class="featured__item">
+          <img src="../assets/images/ORX-005_Gaplant_TR-5_-_MS_Mode.jpg" alt="ORX-005 Gaplant TR-5" />
+          <p class="featured__details">
+            <span class="price">$2,000,000</span>ORX-005 Gaplant TR-5
+          </p>
+        </a>
+
+        <a href="https://gundam.fandom.com/wiki/RX-124_Gundam_TR-6_%EF%BC%BBWoundwort%EF%BC%BD" class="featured__item">
+          <img src="../assets/images/Rx-124-woundwort-ms.jpg" alt="RX-124 Gundam TR-6 Woundwort" />
+          <p class="featured__details">
+            <span class="price">$2,000,000</span>RX-124 TR-6 "Woundwort"
+          </p>
+        </a>
+
+        <a href="https://gundam.fandom.com/wiki/RX-107_%EF%BC%BBRosette%EF%BC%BD" class="featured__item">
+          <img src="../assets/images/Rx-107-rosette.jpg" alt="RX-107 Rosette" />
+          <p class="featured__details">
+            <span class="price">$2,000,000</span>RX-107 "Rosette"
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION 2 -->
+  <section class="our-products">
+    <div class="container">
+      <h2 class="section-title">Mobile Suit Variations</h2>
+
+      <article class="product">
+        <img src="../assets/images/Hazel-II-early.gif" alt="RX-121-2 Gundam TR-1 Hazel II" class="product___image" />
+        <h3 class="product__title">RX-121-2 Gundam TR-1 "Hazel II"</h3>
+        <p class="product__description">
+          The RX-121-2 Gundam TR-1 [Hazel II] is a RGM-79Q GM Quel [Hazel
+          Reserve Unit] stationed aboard the Titans Test Team mothership Aswan
+          for parts exchanges, which has been equipped with a tri booster unit.
+        </p>
+        <a href="https://gundam.fandom.com/wiki/RX-121-2_Gundam_TR-1_%EF%BC%BBHazel_II%EF%BC%BD" class="btn">Buy Now</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/images/Rx-121-2a.jpg" alt="RX-121-2A Gundam TR-1 Advanced Hazel" class="product___image" />
+        <h3 class="product__title">RX-121-2A Gundam TR-1 "Advanced Hazel"</h3>
+        <p class="product__description">
+          The RX-121-2A Gundam TR-1 [Advanced Hazel] is the remodeled RX-121-2
+          Gundam TR-1 [Hazel II], with leg enhancement parts and a multi weapon
+          latch installed to match its specifications to those of the RX-121-1
+          Gundam TR-1 [Hazel Custom].
+        </p>
+        <a href="https://gundam.fandom.com/wiki/RX-121-2A_Gundam_TR-1_%EF%BC%BBAdvanced_Hazel%EF%BC%BD" class="btn">Buy
+          Now</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/images/Orx-005-hrairoo.jpg" alt="ORX-005 Gaplant TR-5 Hrairoo" class="product___image" />
+        <h3 class="product__title">ORX-005 Gaplant TR-5 "Hrairoo"</h3>
+        <p class="product__description">
+          The ORX-005 Gaplant TR-5 [Hrairoo] is a prototype transformable mobile
+          armor, it is a variant of the ORX-005 Gaplant TR-5.
+        </p>
+        <a href="https://gundam.fandom.com/wiki/ORX-005_Gaplant_TR-5_%EF%BC%BBHrairoo%EF%BC%BD" class="btn">Buy Now</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/images/Tr-6-hazel-ii-blue.jpg" alt="RX-124 Gundam TR-6 Hazel II" class="product___image" />
+        <h3 class="product__title">RX-124 Gundam TR-6 "Hazel II"</h3>
+        <p class="product__description">
+          The RX-124 Gundam TR-6 [Hazel II] is a variant of the TR-6 [Woundwort]
+          series produced by the Titans Test Team.
+        </p>
+        <a href="https://gundam.fandom.com/wiki/RX-124_Gundam_TR-6_%EF%BC%BBHazel_II%EF%BC%BD" class="btn">Buy Now</a>
+      </article>
+    </div>
+  </section>
+</main>
+<!-- FOOTER -->
+<footer>
+  
+  <div class="footer-links">
+    <a href="https://gundam.fandom.com/wiki/Titans_Test_Team">About Us</a>
+    <a href="https://gundam.fandom.com/wiki/Titans">Join the Titans</a>
+    <a href="https://gundam.fandom.com/wiki/Earth_Federation">Earth Federation</a>
+    <a href="https://gundam.fandom.com/wiki/Anaheim_Electronics">Anaheim Electronics</a>
+  </div>
+  <div style="display:flex; justify-content: center;">
+    <img class="footer-img" src="../assets/images/Titans_Test_Team.png" alt="">
+  </div>
+  <div class="credits">
+    <p> All images, information and links provided by: <a href="https://gundam.fandom.com/wiki/The_Gundam_Wiki">Gundam Wiki</a> &
+      <a href="https://www.fandom.com/">Fandom</a></p>
+  </div>
+  
+</footer>
+<!-- END OF WEBSITE -->

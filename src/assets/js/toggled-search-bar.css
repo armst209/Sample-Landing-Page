@@ -1,0 +1,15 @@
+.search-form-wrapper {
+    display: none;
+    background-color: #101010 ;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px 15px;
+    margin-top:5em;
+    /* background: url(/resources/images/misc/bg_search-open.png) right center no-repeat #f89d1c; */
+}
+.search-form-wrapper.open {
+    display: block;
+}
